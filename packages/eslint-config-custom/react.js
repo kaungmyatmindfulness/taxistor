@@ -42,5 +42,6 @@ module.exports = {
 		"@typescript-eslint/no-unsafe-call": "off",
 		"import/no-default-export": "off",
 		"no-console": "off",
+		"import/no-extraneous-dependencies": "off",
 	},
 };

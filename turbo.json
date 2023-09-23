@@ -9,6 +9,11 @@
 		"lint": {
 			"dependsOn": ["^build"]
 		},
+		"test": {
+			"outputs": ["coverage/**"],
+			"dependsOn": [],
+			"cache": true
+		},
 		"check-types": {},
 		"dev": {
 			"cache": false,
