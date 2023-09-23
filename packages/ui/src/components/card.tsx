@@ -1,9 +1,9 @@
 import clsx from "clsx";
 
-type CardProps = {
+interface CardProps {
 	children: React.ReactNode;
 	className?: string;
-};
+}
 
 export function Card(props: CardProps) {
 	const { children, className } = props;

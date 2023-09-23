@@ -1,7 +1,7 @@
-type CardInfoProps = {
+interface CardInfoProps {
 	label: string;
 	value: string;
-};
+}
 
 export function CardInfo(props: CardInfoProps) {
 	const { label, value } = props;

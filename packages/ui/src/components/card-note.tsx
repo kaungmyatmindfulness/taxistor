@@ -1,6 +1,6 @@
-type CardNoteProps = {
+interface CardNoteProps {
 	note: string;
-};
+}
 
 export function CardNote(props: CardNoteProps) {
 	const { note } = props;

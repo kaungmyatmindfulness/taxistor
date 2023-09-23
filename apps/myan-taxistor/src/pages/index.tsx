@@ -6,7 +6,7 @@ function Home() {
 	const [salary, setSalary] = useState<number>();
 
 	const personalIncomeTax = useMemo(() => {
-		return calculatePersonalIncomeTax(salary || 0, "TH");
+		return calculatePersonalIncomeTax(salary || 0, "MM");
 	}, [salary]);
 
 	const onChangeSalary = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -18,11 +18,11 @@ function Home() {
 		<div className="w-screen h-screen place-items-center grid">
 			<div>
 				<h1 className="font-bold text-lg">
-					Thailand Simple Personal Income Tax (PIT) Calculator
+					Myanmar Simple Personal Income Tax (PIT) Calculator
 				</h1>
 				<Card className="mt-2">
 					<InputWithCurrency
-						currency="฿"
+						currency="Ks"
 						label="Monthly salary"
 						onChange={onChangeSalary}
 						type="number"
@@ -30,16 +30,16 @@ function Home() {
 					/>
 					<CardInfo
 						label="Annual personal income tax: "
-						value={personalIncomeTax.toLocaleString("TH", {
+						value={personalIncomeTax.toLocaleString("MM", {
 							style: "currency",
-							currency: "THB",
+							currency: "MMK",
 						})}
 					/>
 					<CardInfo
 						label="Monthly personal income tax: "
-						value={(personalIncomeTax / 12).toLocaleString("TH", {
+						value={(personalIncomeTax / 12).toLocaleString("MM", {
 							style: "currency",
-							currency: "THB",
+							currency: "MMK",
 						})}
 					/>
 					<CardNote note="The calculation might not be accurate. Please consult with your accountant." />
