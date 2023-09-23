@@ -2,4 +2,4 @@
 import "./styles.css";
 
 // components
-export * from "./atoms";
+export * from "./components";

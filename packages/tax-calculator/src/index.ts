@@ -33,6 +33,7 @@ function calculatePersonalIncomeTaxThailand(taxableMonthlyIncome: number) {
 	} else if (taxableIncome <= 5000000) {
 		return (taxableIncome - 2000000) * 0.3 + 365000;
 	}
+	return (taxableIncome - 5000000) * 0.35 + 1265000;
 }
 
 function calculatePersonalIncomeTax(

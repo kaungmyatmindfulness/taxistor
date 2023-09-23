@@ -2,9 +2,10 @@
 import type { Config } from "tailwindcss";
 import sharedConfig from "tailwind-config/tailwind.config.ts";
 
-const config: Pick<Config, "prefix" | "presets"> = {
-  prefix: "ui-",
-  presets: [sharedConfig],
+const config: Pick<Config, "prefix" | "presets" | "plugins"> = {
+	prefix: "ui-",
+	presets: [sharedConfig],
+	plugins: [require("@tailwindcss/forms")],
 };
 
 export default config;
