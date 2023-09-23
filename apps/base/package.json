@@ -1,9 +1,9 @@
 {
-	"name": "burman",
+	"name": "base",
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --port 3001",
+		"dev": "next dev --port 3000",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
@@ -12,7 +12,8 @@
 		"next": "^13.4.19",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"ui": "workspace:*"
+		"ui": "workspace:*",
+		"tax-calculator": "workspace:*"
 	},
 	"devDependencies": {
 		"@next/eslint-plugin-next": "^13.4.19",
